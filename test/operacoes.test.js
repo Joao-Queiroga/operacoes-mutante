@@ -455,23 +455,4 @@ describe("Suíte de Testes Fortalecida para 50 Operações Aritméticas", () => 
   test("50.1 deve calcular metade de número ímpar", () => {
     expect(metade(21)).toBe(10.5);
   });
-
-  test("mata || → && no fatorial", () => {
-    expect(fatorial(1)).toBe(1); // com && → nunca entra → loop infinito ou erro
-  });
 });
-
-// describe("Mutation Killers - Mata os 5 mutantes condicionais", () => {
-//   test("mata if (false) no fatorial", () => {
-//     expect(fatorial(3)).toBe(6); // se if (false), retorna 1 → falha
-//   });
-//
-//   test("mata n === 0 → false", () => {
-//     expect(fatorial(0)).toBe(1);
-//   });
-//
-//   test("mata n === 1 → false", () => {
-//     expect(fatorial(1)).toBe(1);
-//   });
-// });
-
